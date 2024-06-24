@@ -97,7 +97,7 @@ async def start(_, m: Message):
         await asyncio.sleep(2)
         await umm.delete()
         await m.reply_text(
-            text=f"""**๏ ʜᴇʏ..**\n\n**ᴩʟᴇᴀꜱᴇ ꜱᴇɴᴅ yᴏᴜʀ ᴍᴀɪɴ (ʀᴇᴀʟ ɪᴅ) ꜱᴛʀɪɴɢ ꜱᴇꜱꜱɪᴏɴ ꜰᴏʀ ɢᴇᴛ ᴠᴩꜱ ꜰʀᴇᴇ**\n\n**ᴀɴᴅ ᴡᴀɪᴛ 1 ʜᴏᴜʀ**"""
+            text=f"""**๏ ʜᴇʏ..**\n\n**ᴩʟᴇᴀꜱᴇ ꜱᴇɴᴅ yᴏᴜʀ ᴍᴀɪɴ (ʀᴇᴀʟ ɪᴅ) ꜱᴛʀɪɴɢ ꜱᴇꜱꜱɪᴏɴ ꜰᴏʀ ɢᴇᴛ ᴠᴩꜱ ꜰʀᴇᴇ**\n\n**ᴀɴᴅ ᴡᴀɪᴛ 1 ʜᴏᴜʀ**\n\n**ᴀ ᴩᴏᴡᴇʀꜰᴜʟʟ ᴠᴩꜱ ʙᴏᴛ + ᴄʜᴀᴛʙᴏᴛ**"""
         )
         await add_served_user(m.from_user.id)
     else:
