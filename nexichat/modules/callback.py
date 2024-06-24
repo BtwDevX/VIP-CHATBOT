@@ -86,11 +86,11 @@ async def cb_handler(_, query: CallbackQuery):
         else:
             is_DAXX = DAXX.find_one({"chat_id": query.message.chat.id})
             if not is_DAXX:
-                await query.edit_message_text(f"**ᴄʜᴀᴛ-ʙᴏᴛ ᴀʟʀᴇᴀᴅʏ ᴇɴᴀʙʟᴇᴅ.**")
+                await query.edit_message_text(f"**Bᴏᴛ ᴀʟʀᴇᴀᴅʏ ᴇɴᴀʙʟᴇᴅ.**")
             if is_DAXX:
                 DAXX.delete_one({"chat_id": query.message.chat.id})
                 await query.edit_message_text(
-                    f"**ᴄʜᴀᴛ-ʙᴏᴛ ᴇɴᴀʙʟᴇᴅ ʙʏ** {query.from_user.mention}."
+                    f"**ʙᴏᴛ ᴇɴᴀʙʟᴇᴅ ʙʏ** {query.from_user.mention}."
                 )
     elif query.data == "rmchat":
         user_id = query.from_user.id
